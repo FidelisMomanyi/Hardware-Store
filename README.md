@@ -27,11 +27,18 @@ https://fidelismomanyi.github.io/Pizza-Inn/
 * Select item/material.
 ## Support and contact details
 I am currently a sudent at the Moringa School, pursuing a Software in Development Course.
-Incase of any queries you can reach me at;
+Incase of any queries you can reach us at;
 ## Slack: 
 ```
  Fidelis Morike Momanyi
 ```
+```
+Rigan Kenaly Gachoka
+```
+```
+George Gichuru
+```
+
 ## Email:
 ```
 fidelismomanyi001@gmail.com
