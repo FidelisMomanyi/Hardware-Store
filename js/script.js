@@ -7,3 +7,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+$(document).ready(function(){
+  $('span').click(function(){
+      $('ul').toggleClass('active');
+      $('.toggle').toggleClass('togle');
+  })
+})
+
