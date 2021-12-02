@@ -9,6 +9,28 @@ window.onclick = function(event) {
 }
 
 
+$(document).ready(function(){
+  $('span').click(function(){
+      $('ul').toggleClass('active');
+      $('.toggle').toggleClass('togle');
+  })
+})
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+$("#login-button").click(function(){
+    $("#login-container").show();
+})
+
+
 var buildingMaterial = document.getElementById("building").value;
 var handTools = document.getElementById("handtools").value;
 var powerTools = document.getElementById("powertools").value;
@@ -254,3 +276,4 @@ var totalAfterDelivery = finalTotal + delivPrice;
  alert("Your final amount after delivery will be: " +totalAfterDelivery);
 
 }
+
