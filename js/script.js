@@ -1,12 +1,13 @@
 // Get the modal
 var modal = document.getElementById('id01');
-
+alert("WELCOME");
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
 
 var buildingMaterial = document.getElementById("building").value;
 var handTools = document.getElementById("handtools").value;

@@ -59,6 +59,7 @@
     to {transform: scale(1)}
   } 
 
+
   .orders{
     margin: 0%;
     padding: 0%;
@@ -69,7 +70,16 @@
     background: dodgerblue;
     margin: 20px auto;
     padding: 30px;
-    box-shadow: 1px 1px 2px black;
+    box-s
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.one{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;hadow: 1px 1px 2px black;
 }
 
  .confirm{
@@ -122,3 +132,169 @@
 }
 
 
+  body{
+    background-color: dimgray;
+    font-size: 150%;
+}
+body {
+    overflow-x: hidden;
+  }
+  
+144
+ 
+  .hove
+  .hover-link:hover {
+    text-decoration: none;
+    color: initial;
+  }
+  
+  .box-model {
+    height: 40px;
+  }
+  
+  .none-decoration {
+    text-decoration: none;
+  }
+  
+  header a:hover,
+  footer a:hover,
+  .hover-logo:hover {
+    color: dodgerblue;
+    text-decoration: none;
+  }
+  
+  .my-photo {
+    width: 22px;
+    height: 24px;
+  }
+  
+  .cap-image {
+    height: 180px;
+    width: 100%;
+  }
+  
+  input,
+  label {
+    cursor: pointer;
+  }
+  
+  input[type='radio']:checked::after {
+    width: 16px;
+    height: 15px;
+    border-radius: 17px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: dodgerblue;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid dodgerblue;
+  }
+  
+  .hot-img {
+    background-image:
+      linear-gradient(to bottom, rgba(76, 64, 83, 0.644), rgb(6, 2, 26)),
+      url(./Images/home-images/home-images/hot-image.jpg);
+    height: 360px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: initial;
+    background-position: center;
+  }
+  
+  .add-container {
+    background-image: url(./Images/home-images/home-images/home7.jpg);
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+  }
+  
+  .search-image {
+    height: 110%;
+  }
+  
+  /* colors */
+  .black-background {
+    background-color: #383838;
+  }
+  
+  .grey {
+    color: #888;
+  }
+  
+  .grey-background {
+    background-color: #888;
+  }
+  
+  .grey-background {
+    background-color: dodgerblue;
+  }
+  
+  .black {
+    color: slateblue;
+  }
+  
+  .grey {
+    color: dodgerblue;
+  }
+  
+  /* fonts */
+  @font-face {
+    font-family: Gotham;
+    src: url(./Fonts/GothamBold.ttf);
+  }
+  
+  @font-face {
+    font-family: Helvatica;
+    src: url(./Fonts/Helvetica\ Neue\ LT\ 23\ Ultra\ Light\ Extended.ttf);
+  }
+  
+  @font-face {
+    font-family: Gotham-light;
+    src: url(./Fonts/Gotham-Light.otf);
+  }
+  
+  .gotham {
+    font-family: Gotham, sans-serif;
+  }
+  
+  .helvatica {
+    font-family: Helvatica, sans-serif;
+  }
+  
+  .gotham-light {
+    font-family: Gotham-light, sans-serif;
+  }
+  
+  /* responsives */
+  .small-font {
+    font-size: 1.2ex;
+    line-height: 19px;
+  }
+  
+  .title-sentence {
+    font-size: 13px;
+  }
+  
+  @media screen and (min-width: 350px) {
+    .small-font {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .small-font {
+      font-size: 18px;
+    }
+  
+    .hot-img {
+      height: 290px;
+    }
+  
+    .title-sentence {
+      font-size: 22px;
+    }
+  }
