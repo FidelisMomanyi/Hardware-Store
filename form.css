@@ -1,0 +1,56 @@
+.orders{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 500px;
+    width: 100%;
+    background: dodgerblue;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px black;
+} .confirm{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}.form{
+    margin-bottom: 15px;
+    display: inline-block;
+    align-items: center;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 8px;
+    border-radius: 3px;
+}.delivernot{
+    background: dodgerblue;
+    margin-left: 40%;
+    margin-top: 2%;
+}.one{
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 500px;
+    width: 200%;
+    background: dodgerblue;
+    margin: 20px auto;
+    padding: 10px 8px;
+    box-shadow: 1px 1px 2px black;
+    align-items: center;
+    display: inline block;}#form{
+    margin-bottom: 15px;
+    display: inline-block;
+    align-items: center;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 8px;
+    border-radius: 3px;
+}input{
+  padding: 8px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+}

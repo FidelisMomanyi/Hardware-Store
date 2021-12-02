@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -20,11 +19,15 @@
       </div>
 
       <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#categories">Categories</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contacts</a></li>
-          <li id="login-button"><a href="#login">Log In </a></li>
+          <li id="home-button"><a href="#home">Home</a></li>
+          <li id="categories-button"><a href="#categories">Categories</a></li>
+          <li id="aboutus-button"><a href="about.html">About Us</a></li>
+          <li id="contacts-button"></li><a href="#contact">Contacts</a></li>
+          <li id="login-button"><a href="form.html">Log In </a></li>
+          <li class="list-inline-item nav-item text-uppercase "><a href="https://www.builders.co.ke/?gclid=Cj0KCQiAkZKNBhDiARIsAPsk0WiMAhqZVN4_-IzwhUhlbR6P6FPsMzFb2ejhPLArYb8ZrzbVmEV0Gk4aAtWbEALw_wcB" class="grey small-font gotham"><i
+            class="fas fa-search-dollar pr-1"></i>Search</a></li>
+      <li id=""><a href="https://jiji.co.ke/?utm_source=google_adw&utm_medium=5672215711&utm_campaign=13620070260&utm_content=123529266146&utm_term=529433023909&gclid=Cj0KCQiAtJeNBhCVARIsANJUJ2GqMkE3sexc6xzkA39HcGuaKuLtEvUTb56AcJuo9gQzhAYO5a96ylEaAs90EALw_wcB">
+          <span id="text-white grey-background rounded py-1 px-2 gotham">Sell and buy</span></a>
          
       </ul>
 
@@ -39,7 +42,7 @@
 
 <!-- The Modal (contains the Sign Up form) -->
 <div id="demo" class="content">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+  <span onclick="document.getElementById('demo').style.display='none'" class="close" title="Close Modal">times;</span>
   <form class="modal-content" action="/action_page.php">
     <div class="signup">
       <h1>Sign Up</h1>
@@ -86,7 +89,7 @@
       class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="#form.html">
     <div class="imgcontainer">
       <img src="images/hardware.jpeg" alt="Avatar" class="avatar">
     </div>
@@ -98,7 +101,7 @@
       <label for="psw"><b>Password</b></label><br>
       <input type="password" placeholder="Enter Password" name="psw" required><br><br>
 
-      <button type="submit">Login </button>
+      <button type="submit">Login</button>
       <label>
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><br><br>
         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -115,313 +118,18 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-<div class="orders" id="order">
-  <h2 class="confirm" class="text-center summary m-3 bg-info" >Hello there, please confirm your order:</h2>
-  <div class="form-group row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8 order-overlay text-center">
-          <form class="col-sm-6 offset-sm-3 text-center">
-              <div class="form">       
-              <label>Building Materials</label>
-              <select class="custom-select custom-select-md mb-3 building" id="building" required>
-                  <option value="cement">cement @ Ksh.550</option>
-                  <option value="steel">Steel @ Ksh.400</option>
-                  <option value="wood">Wood @ Ksh.800</option>
-                  <option value="bricks">Bricks @ Ksh.25</option>
-                  <option value="stone-tiles">Stone-tiles @ Ksh.150</option>
-              </select>
-              <br><br>
-              <label>Hand Tools</label>
-              <select class="custom-select custom-select-md mb-3" id="handtools" required>
-                  <option value="wrenches">Wrenches @ Ksh.750</option>
-                  <option value="pliers">Pliers @ Ksh.900</option>
-                  <option value="cutters">Cutters @ Ksh.1500</option>
-                  <option value="screwdrivers">Screwdrivers @ Ksh.250</option>
-                  <option value="hammers">Hammers @ KSH.600</option>
-              </select>
-              <br><br>
-              <label for="crust">Power Tools</label>
-              <select class="custom-select custom-select-md mb-3" id="powertools" required>
-                  <option value="drills">Drills @ Ksh.4000</option>
-                  <option value="saws">Saws @ Ksh.6000</option>   
-                  <option value="sanders">Sanders @ Ksh.3000</option>
-                  <option value="grinders">Grinders @ Ksh.5000</option>
-                  <option value="leaf-blowers">Leaf-blowers @ Ksh.2000</option>
-              </select>
-              <br><br>
-          </select>
-          <label for="crust">Electrical Supplies</label>
-          <select class="custom-select custom-select-md mb-3" id="electric" required>
-              <option value="outlets">Outlets @ Ksh.200</option>
-              <option value="electrical fuses">Electrical fuses @ Ksh.150</option>   
-              <option value="power strips">Power strips @ Ksh.80</option>
-              <option value="surge protectors">Surge protectors @ Ksh.1500</option>
-              <option value="extentions">Extentions @ Ksh.800</option>
-          </select>
-          <br><br>
-          <label for="crust">Plumbing Supplies</label>
-          <select class="custom-select custom-select-md mb-3" id="plumbing" required>
-              <option value="pipes">Pipes @ Ksh.500</option>
-              <option value="basin wrenches">Basin wrenches @ Ksh.700</option>   
-              <option value="plumber's torch">Plumber's torch @ Ksh.280</option>
-              <option value="thread sealing tape">Thread sealing tape @ Ksh.50</option>
-              <option value="hacksaw">Hacksaw @ Ksh.350</option>
-          </select>
-          <br><br>
-          <label>Paint</label>
-          <select class="custom-select custom-select-md mb-3" id="paint" required>
-                  <option value="enamelpaint">Enamel paint @ Ksh.2800</option>
-                  <option value="oilpaint">Oil paint @ Ksh.2000</option>
-                  <option value="plasticpaint">Plastic paint @ Ksh.1800</option>
-                  <option value="cementpaint">Cement paint @ Ksh.600</option>
-                  <option value="anticorrosivepaint">Anti-corrosive paint @ Ksh.1200</option>
-              </select>
-              <br><br>
-              <label for="number">Number of supplies</label>
-              <input type="number" class="form-control" id="number" placeholder="Number of supplies" min="1" required><br>
-      </div>
-          </form>
-          <br><br>
-          <a href="#summary">
-              <button type="submit" id="btn-order" class="btn btn-success btn-lg">order</button><br>
-          </a>
-
-      </div>
-      <div class="col-sm-2"></div>
-  </div>
-
-  <div class="order-summary" id="sum-order">
-  <ol id="list" class="text-center sum"></ol>
-  </div>
-
-</div>
-
-  <div class="cdata-overlay">
-      <div class="customerdata row">
-          <div class="col-sm-3"></div>
-          <form action="" class="form-group col-sm-6 data">
-              <input type="text" id="name" class="form-control cdata" placeholder="Name:">,<br>
-
-              <input type="number" id="phone" class="form-control cdata" placeholder="Phone Number:"><br>
-
-              <input type="text" id="location" class="form-control cdata" placeholder="Location:"><br>
-
-              <label for="delivery-location"></label><br>
-
-          <select name="loc" id="loc"><br>
-
-              <option value="within">Within Rifigetra location</option><br>
-
-              <option value="10km-after">10km beyond Rifigetra location</option><br>
-
-              <option value="beyond 10km">Beyond 10km from Rifigetra location</option><br>
-
-          </select>
-              <button class="btn bg-info text-center d-block mx-auto go" onclick="delivery()">Make Delivery</button>
-         
-         
-          
-          </form>
-
-          <div class="col-sm-3"></div>
-      </div>
-  </div>
-  <div class="d-block mx-auto text-center">
-
-      <button class='delivernot' onclick="tracy()">Pick Up</button>
-  </div>
 </div>
 <header class="fixed-top black-background">
   <nav class="container d-flex flex-row justify-content-between">
     <div class="order-1 d-flex">
       <ul class="list-inline">
-        <li class="list-inline-item nav-item text-uppercase d-none d-md-inline grey"><a href="#"
-            class="gotham grey"><i class="fas fa-landmark rotate-icon pr-2 fa-2x  pt-3"></i>RIFIGETRA</a></li>
-        <li class="list-inline-item nav-item text-uppercase d-md-none"><a href="reload" class="grey small-font gotham"><i
-              class="fas fa-landmark rotate-icon pr-2"></i>RIFIGETRA</a></li>
-        <li class="list-inline-item nav-item text-uppercase "><a href="#" class="grey small-font gotham"><i
-              class="fas fa-home pr-1"></i>home</a></li>
-        <li class="list-inline-item nav-item text-uppercase "><a href="#" class="grey small-font gotham"><i
-              class="fas fa-chart-bar pr-1"></i>Categories</a></li>
-        <li class="list-inline-item nav-item text-uppercase "><a href="https://www.builders.co.ke/?gclid=Cj0KCQiAkZKNBhDiARIsAPsk0WiMAhqZVN4_-IzwhUhlbR6P6FPsMzFb2ejhPLArYb8ZrzbVmEV0Gk4aAtWbEALw_wcB" class="grey small-font gotham"><i
-              class="fas fa-search-dollar pr-1"></i>Search</a></li>
-        <li class="list-inline-item nav-item text-uppercase d-none d-md-inline"><a href="https://jiji.co.ke/?utm_source=google_adw&utm_medium=5672215711&utm_campaign=13620070260&utm_content=123529266146&utm_term=529433023909&gclid=Cj0KCQiAtJeNBhCVARIsANJUJ2GqMkE3sexc6xzkA39HcGuaKuLtEvUTb56AcJuo9gQzhAYO5a96ylEaAs90EALw_wcB">
-            <span class="text-white grey-background rounded py-1 px-2 gotham">Sell and buy</span></a>
+        
+  
         </li>
       </ul>
     </div>
-    <div class="order-2 flex-row pt-4 d-none d-lg-inline">
-      <a href="j"><i class="fas fa-envelope px-2 fa-lg grey"></i></a>
-      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAXsMmyCs7Glm2bRxd9eMERoxjBTPBmzfUdw&usqp=CAU" alt="image"
-          class="my-photo rounded-circle"></a>
-    </div>
-  </nav>
-</header>
-<main class="bg-light w-100 p-0 m-0">
-  <section class="pt-md-5 mt-md-3">
-    <div class="hot-img d-flex flex-column col-12 p-0 m-0">
-      <h1 class="text-uppercase mx-auto text-center pt-5 gotham mt-3 text-white">RIFIGETRA</h1>
-      <p class="text-center px-2 gotham-light text-white">Quality is assured</p>
-      <div class="list-inline d-flex flex-column flex-md-row text-center text-md-left pt-md-5 mx-auto">
-        <div class="list-inline-item col-12 col-md-3 py-1 w-100 m-0">
-          <select id="category" name="category" class=" box-model gotham-light mr-2 rounded w-100">
-            <option value="categories mr-4">All categories</option>
-            <option value=>Building materials</option>
-            <option value=>Building tools</option>
-            <option value=>Paints</option>
-            <option value=>Electrical supplies</option>
-            <option value=>Plumbing tools</option>
-          </select>
-        </div>
-        <div class="list-inline-item col-12 col-md-3 py-1 m-0">
-          <input type="text" id="lnam" name="lastname" placeholder="Search location..."
-            class=" box-model gotham-light rounded w-100">
-        </div>
-        <div class="list-inline-item col-12 col-md-3 py-1 m-0">
-          <input type="text" id="lname" name="lastname" placeholder="Search feature..."
-            class=" box-model gotham-light rounded w-100">
-        </div>
-        <div class="list-inline-item col-12 col-md-3 m-0 py-1">
-          <div class=""><a
-              href="https://www.builders.co.ke/?gclid=Cj0KCQiAkZKNBhDiARIsAPsk0WiMAhqZVN4_-IzwhUhlbR6P6FPsMzFb2ejhPLArYb8ZrzbVmEV0Gk4aAtWbEALw_wcB" class="grey hover-link">search</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container p-0 px-md-5">
-    <h5 class="gotham grey pt-3 px-md-5 pl-3 ml-md-5 title-sentence">Quality and affordability is assured</h5>
-    <div class="row d-flex flex-row container px-auto m-0">
-      <div class="col-1 align-self-center d-none d-lg-inline"><a href="#"><i
-            class="fas fa-angle-left py-auto fa-2x border rounded-circle py-2 px-3 grey"></i></a></div>
-      <div class="col-md-5 w-100 p-0 m-0"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvZx3VTRNk3duRRu04g-5KMcg8kryaQcR7Ow&usqp=CAU" alt="Quality is assured"
-          class="w-100 height-auto"></div>
-      <div class="col-md-5 d-none d-md-inline pr-0 mr-0">
-        <h6 class="gotham grey">We offer free delivery and consultancy.</h6>
-        <article>
-          <p class="helvatica black font-weight-bold d-none d-xl-inline">We not only sell construction materials but we also offer cinstruction services such as;
-            construction workers, construction equipment and construction engineers.</p>
-          <h6 class="black gotham-light none-decoration"><span>by <a class="font-weight-bold black hover-link"></a>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <div class="grey-background rounded py-1 px-4 gotham border">Prices start from; ksh 25000</div>
-          </li>
-          <li class="list-inline-item">
-            <div class="grey-background rounded py-1  px-4"><a href="#" class="gotham hover-link black"><i
-                  class="fas fa-money-check-alt px-2"></i>BUY</a></div>
-          </li>
-        </ul>
-      </div>
     
-    </div>
-  </section>
-  
-          <div class="col-6 col-md-3 d-flex flex-column p-1 p-md-3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjLyDa-jZKlpA9xuUM0srDEjOWqyRhwLizHw&usqp=CAU">
-              <h5 class="grey gotham-light py-0 my-0">BUILDING MATERIALS</h5>
-              <p class="grey helvatica font-weight-bold py-0 my-0">We offer the highest quality of building material to last for centuries</p>
-              <p class="grey helvatica font-weight-bold">Quality is assured</p>
-              <div class="d-flex flex-row justify-content-between">
-                <a href="#" class=""><i class="far fa-plus-square fa-2x fpnt-weight-light grey"></i></a>
-                <div class="grey gotham pt-2">Prices from; ksh 550 </div>
-                  <div class="grey-background rounded py-1  px-4"><a href="#" class="gotham hover-link black"><i
-                    class="fas fa-money-check-alt px-2"></i>BUY</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 d-flex flex-column p-1 p-md-3">
-            <img src="http://constructionexec.com/assets/site_18/images/article/AdobeStock_80320001_small.jpeg?width=800" alt="t">
-            <div class="p-1 py-2 bg-white">
-              <h5 class="grey gotham-light py-0 my-0">BUILDING TOOLS</h5>
-              <p class="greyhelvatica font-weight-bold py-0 my-0">Built and made from quality products to assure our customer of the best tools</p>
-              <p class="grey helvatica font-weight-bold">For long lasting tools</p>
-              <div class="d-flex flex-row justify-content-between">
-                <a href="#" class=""><i class="far fa-plus-square fa-2x fpnt-weight-light grey"></i></a>
-                <div class="grey gotham pt-2">Prices from; ksh 250</div>
-                <div class="grey-background rounded py-1  px-4"><a href="#" class="gotham hover-link black"><i
-                  class="fas fa-money-check-alt px-2"></i>BUY</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 d-flex flex-column p-1 p-md-3">
-            <img  src="https://thumbs.dreamstime.com/b/st-petersburg-russia-march-hardware-store-shelves-varnishes-paints-your-home-st-petersburg-russia-march-hardware-148042258.jpg" alt="t">
-            <div class="p-1 py-2 bg-white">
-              <h5 class="grey gotham-light py-0 my-0">PAINTS</h5>
-              <p class="grey helvatica font-weight-bold py-0 my-0">We offer a variety of paint to suit all yor needs</p>
-              <p class="grey helvatica font-weight-bold">Quality is assured</p>
-              <div class="d-flex flex-row justify-content-between">
-                <a href="#" class=""><i class="far fa-plus-square fa-2x fpnt-weight-light grey"></i></a>
-                <div class="grey gotham pt-2">Price start from; ksh 700</div>
-                <div class="grey-background rounded py-1  px-4"><a href="#" class="gotham hover-link black"><i
-                  class="fas fa-money-check-alt px-2"></i>BUY</a></div>
-              </div>
-              <h1>  ABOUT US</h1>
-              <P>Rifigetra is your go to hardware store for all your construction needs, we specialise in building and construction materials. If it’s product you need or service you need,
-                 whether in-store or online, you’ll always find it at our hardware. We also strive to making the consumers work much less of a hustle by offering free delivery service
-                 to make it easier for you.</P>
-            <H2>THE SERVICES WE OFFER</H2>
-            <P>Our hardware store, also known us Rifigetra, sell household hardware for home improvement including: fasteners,building materials, hand tools, power tools,
-               keys, locks, hinges, chains, plumbing supplies, electrical supplies, cleaning products, housewares, tools, utensils, paint, and lawn and garden products
-               directly to consumers for use at home or for business. </P>
-          
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<footer class="pt-5 d-flex flex-row">
-  <section class="container">
-    <div class="row d-flex p-0 m-0">
-      <div class="d-flex flex-column col-12 col-md-4 pl-0 ml-0">
-        <a class="text-uppercase h6 text-center pr-2 grey hover-logo black-background py-2 rounded gotham" href="#"><i
-            class="fas fa-landmark rotate-icon mr-2"></i>RIFIGETRA</a>
-        <p class="text-center text-md-left helvatica black font-weight-bold">The most affordable and high quality building and construction materials 
-          with very friendly services to the customers.
-        </p>
-      </div>
-      <div class="col-6 col-md-2 text-center text-md-left p-0 m-0">
-        <p class="text-uppercase grey gotham">location</p>
-        <a href="#" class="helvatica black font-weight-bold">Nairobi</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Mombasa</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Nakuru</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Kisumu</a><br>
-        
-      </div>
-      <div class="col-6 col-md-2 text-center text-md-left p-0 m-0">
-        <p class="text-uppercase grey gotham">Pages</p>
-        <a href="#" class="helvatica black font-weight-bold">Home</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Categories</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Search</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Contact</a><br>
-        
-      </div>
-      <div class="col-12 col-md-2 text-center text-md-left p-0 m-0">
-        <p class="text-uppercase grey gotham">Credits</p>
-        <a href="#" class="helvatica black font-weight-bold">Fidelis</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Rigan</a><br>
-        <a href="#" class="helvatica black font-weight-bold">George</a><br>
-        <a href="#" class="helvatica black font-weight-bold">Tracy</a><br>
-       
-      </div>
-      <div class="col-12 col-md-1 py-3 p-md-0 m-0 ">
-        <table class="mx-auto">
-          <tr class="">
-            <td class="float-right float-md-left helvatica black font-weight-bold">Lanaguage:</td>
-            <td class="pl-2 helvatica black font-weight-bold">English</td>
-          </tr>git 
-          <tr class="">
-            <td class="float-right float-md-left helvatica black font-weight-bold">Location:</td>
-            <td class="pl-2 helvatica black font-weight-bold">Nairobi</td>
-          </tr>
-          <tr>
-            <td class="float-right float-md-left helvatica black font-weight-bold">Currency:</td>
-            <td class="pl-2 helvatica black font-weight-bold">Kenyan shilling</td>
-
-             <!-- bootstrap link -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </nav>
 
       <script src="js/script.js"></script>
 </body>
