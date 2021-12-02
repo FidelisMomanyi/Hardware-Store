@@ -58,6 +58,80 @@
     from {transform: scale(0)}
     to {transform: scale(1)}
   } 
+
+
+  .orders{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 500px;
+    width: 100%;
+    background: dodgerblue;
+    margin: 20px auto;
+    padding: 30px;
+    box-s
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.one{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;hadow: 1px 1px 2px black;
+}
+
+ .confirm{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form{
+    margin-bottom: 15px;
+    display: inline-block;
+    align-items: center;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 8px;
+    border-radius: 3px;
+}
+
+.delivernot{
+    background: dodgerblue;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.one{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 500px;
+    width: 100%;
+    background: dodgerblue;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px black;
+}
+
+#form{
+    margin-bottom: 15px;
+    display: inline-block;
+    align-items: center;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 8px;
+    border-radius: 3px;
+}
+
+
   body{
     background-color: dimgray;
     font-size: 150%;
@@ -66,6 +140,9 @@ body {
     overflow-x: hidden;
   }
   
+144
+ 
+  .hove
   .hover-link:hover {
     text-decoration: none;
     color: initial;

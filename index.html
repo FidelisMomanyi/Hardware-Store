@@ -47,6 +47,124 @@ class="close" title="Close Modal">&times;</span>
     </div>
   </form>
 </div> 
+
+
+<div class="orders" id="order">
+  <h2 class="confirm" class="text-center summary m-3 bg-info" >Hello there, please confirm your order:</h2>
+  <div class="form-group row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 order-overlay text-center">
+          <form class="col-sm-6 offset-sm-3 text-center">
+              <div class="form">       
+              <label>Building Materials</label>
+              <select class="custom-select custom-select-md mb-3 building" id="building" required>
+                  <option value="cement">cement @ Ksh.550</option>
+                  <option value="steel">Steel @ Ksh.400</option>
+                  <option value="wood">Wood @ Ksh.800</option>
+                  <option value="bricks">Bricks @ Ksh.25</option>
+                  <option value="stone-tiles">Stone-tiles @ Ksh.150</option>
+              </select>
+              <br><br>
+              <label>Hand Tools</label>
+              <select class="custom-select custom-select-md mb-3" id="handtools" required>
+                  <option value="wrenches">Wrenches @ Ksh.750</option>
+                  <option value="pliers">Pliers @ Ksh.900</option>
+                  <option value="cutters">Cutters @ Ksh.1500</option>
+                  <option value="screwdrivers">Screwdrivers @ Ksh.250</option>
+                  <option value="hammers">Hammers @ KSH.600</option>
+              </select>
+              <br><br>
+              <label for="crust">Power Tools</label>
+              <select class="custom-select custom-select-md mb-3" id="powertools" required>
+                  <option value="drills">Drills @ Ksh.4000</option>
+                  <option value="saws">Saws @ Ksh.6000</option>   
+                  <option value="sanders">Sanders @ Ksh.3000</option>
+                  <option value="grinders">Grinders @ Ksh.5000</option>
+                  <option value="leaf-blowers">Leaf-blowers @ Ksh.2000</option>
+              </select>
+              <br><br>
+          </select>
+          <label for="crust">Electrical Supplies</label>
+          <select class="custom-select custom-select-md mb-3" id="electric" required>
+              <option value="outlets">Outlets @ Ksh.200</option>
+              <option value="electrical fuses">Electrical fuses @ Ksh.150</option>   
+              <option value="power strips">Power strips @ Ksh.80</option>
+              <option value="surge protectors">Surge protectors @ Ksh.1500</option>
+              <option value="extentions">Extentions @ Ksh.800</option>
+          </select>
+          <br><br>
+          <label for="crust">Plumbing Supplies</label>
+          <select class="custom-select custom-select-md mb-3" id="plumbing" required>
+              <option value="pipes">Pipes @ Ksh.500</option>
+              <option value="basin wrenches">Basin wrenches @ Ksh.700</option>   
+              <option value="plumber's torch">Plumber's torch @ Ksh.280</option>
+              <option value="thread sealing tape">Thread sealing tape @ Ksh.50</option>
+              <option value="hacksaw">Hacksaw @ Ksh.350</option>
+          </select>
+          <br><br>
+          <label>Paint</label>
+          <select class="custom-select custom-select-md mb-3" id="paint" required>
+                  <option value="enamelpaint">Enamel paint @ Ksh.2800</option>
+                  <option value="oilpaint">Oil paint @ Ksh.2000</option>
+                  <option value="plasticpaint">Plastic paint @ Ksh.1800</option>
+                  <option value="cementpaint">Cement paint @ Ksh.600</option>
+                  <option value="anticorrosivepaint">Anti-corrosive paint @ Ksh.1200</option>
+              </select>
+              <br><br>
+              <label for="number">Number of supplies</label>
+              <input type="number" class="form-control" id="number" placeholder="Number of supplies" min="1" required><br>
+      </div>
+          </form>
+          <br><br>
+          <a href="#summary">
+              <button type="submit" id="btn-order" class="btn btn-success btn-lg">order</button><br>
+          </a>
+
+      </div>
+      <div class="col-sm-2"></div>
+  </div>
+
+  <div class="order-summary" id="sum-order">
+  <ol id="list" class="text-center sum"></ol>
+  </div>
+
+</div>
+
+  <div class="cdata-overlay">
+      <div class="customerdata row">
+          <div class="col-sm-3"></div>
+          <form action="" class="form-group col-sm-6 data">
+              <input type="text" id="name" class="form-control cdata" placeholder="Name:">,<br>
+
+              <input type="number" id="phone" class="form-control cdata" placeholder="Phone Number:"><br>
+
+              <input type="text" id="location" class="form-control cdata" placeholder="Location:"><br>
+
+              <label for="delivery-location"></label><br>
+
+          <select name="loc" id="loc"><br>
+
+              <option value="within">Within Rifigetra location</option><br>
+
+              <option value="10km-after">10km beyond Rifigetra location</option><br>
+
+              <option value="beyond 10km">Beyond 10km from Rifigetra location</option><br>
+
+          </select>
+              <button class="btn bg-info text-center d-block mx-auto go" onclick="delivery()">Make Delivery</button>
+         
+         
+          
+          </form>
+
+          <div class="col-sm-3"></div>
+      </div>
+  </div>
+  <div class="d-block mx-auto text-center">
+
+      <button class='delivernot' onclick="tracy()">Pick Up</button>
+  </div>
+</div>
 <header class="fixed-top black-background">
   <nav class="container d-flex flex-row justify-content-between">
     <div class="order-1 d-flex">
