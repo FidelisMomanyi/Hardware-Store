@@ -13,6 +13,7 @@ This is a web application of a business hardware management system that helps th
 * Open the project with your perfect Intergrated Development Environment (IDE)
 ## Live link
 
+
 ## Known Bugs
 * Signup and Log In button are not fully functional.
 * System does nt have database to store information.
